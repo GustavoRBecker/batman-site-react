@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+#commentContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#commentContent {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.alfred {
+    background-image: url('../../assets/alfred.webp');
+    background-position: 60%;
+}
+
+.gordon {
+    background-image: url('../../assets/gordon-2');
+    background-position: 45%;
+}
+
+#commentSection {
+    border: 5px dashed #d21617;
+    padding: 5px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    font-size: 12px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#title {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+@media(max-width: 769px) {
+    #commentContent {
+        display: flex;
+        flex-direction: column;
+    }
+}
